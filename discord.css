@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #000000 0%, #2a34b1 100%);
+  color: white;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.header {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #5865f2;
+}
+
+.login-btn {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px;
+}
+
+.hero-text {
+  max-width: 50%;
+  padding: 0 3rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn-1 {
+  background-color: white;
+  color: black;
+  padding: 1rem 1.3rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.btn-2 {
+  background-color: #5865f2;
+  padding: 1rem 1.3rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 47.5rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 30px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .download {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: linear-gradient(135deg, #5865f2 0%, #2a34b1 100%);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 30px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-container.active {
+    right: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .login-btn {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
