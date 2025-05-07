@@ -16,14 +16,15 @@
         <img src="/assets/discord-logo.svg" alt="Discord" />
       </div>
 
-      <div class="mobile-header">
-        <img src="/assets/discord.webp" alt="Discord-image" class="discord-logo">
-        <button class="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-
+      
       <div class="nav-container">
+        <div class="mobile-header">
+          <!-- <img src="/assets/discord.webp" alt="Discord-image" class="discord-logo"> -->
+          <button class="hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+         <img src="/assets/discord.webp" alt="Discord-image" class="discord-logo">
         <ul class="nav-links">
           <li><a href="#">Download</a></li>
           <li><a href="#">Nitro</a></li>
@@ -35,10 +36,14 @@
           <li><a href="#">Developers</a></li>
           <li><a href="#">Careers</a></li>
         </ul>
-        <div class="nav-buttons">
-          <button class="login-btn">Log In</button>
-          <div class="btn">Download for Windows</div>
-        </div>
+      <div class="nav-buttons">
+        <button class="login-btn">Log In</button>
+        <div class="btn">Download for Windows</div>
+      </div>
+      </div>
+      <div class="nav-buttons1">
+        <button class="login-btn">Log In</button>
+        <div class="btn">Download for Windows</div>
       </div>
     </nav>
   </header>
@@ -80,7 +85,7 @@
   </section>
   <section class="fun-chat-section">
     <div class="fun-chat-container">
-      <div class="fun-chat-right">
+      <div class="fun-chat-right1">
         <h2>Stream like you’re in the same room</h2>
         <p>
           High quality and low latency streaming makes it feel like you're hanging out on the couch with friends while
@@ -126,6 +131,10 @@
             <label for="language">Language</label>
             <select id="language">
               <option>English (UK)</option>
+              <option>Čeština</option>
+              <option>Dansk</option>
+              <option>Hindi</option>
+              <option>Magyar</option>
             </select>
           </div>
           <div class="social-icons">
@@ -183,7 +192,7 @@
           </div>
         </div>
       </div>
-      <p>Discord</p>
+      <span><img src="/assets/discord-text.svg" alt="discord-text" srcset=""></span>
     </div>
   </footer>
   <script src="discord.js"></script>
